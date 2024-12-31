@@ -33,7 +33,9 @@ def format_single_linter_file(file_path: str, errors: list) -> dict:
 def format_linter_report(linter_report: dict) -> list:
     #  """
     # formats all errors for all report files
-    #:param linter_report: Dict - result of worked func : format_single_linter_file
-    #:return: formated list with both funcs
+    # :param linter_report: Dict - result of worked
+    # func : format_single_linter_file
+    # :return: formated list with both funcs
     # """
-    return [format_single_linter_file(key, value) for key, value in linter_report.items()]
+    return [format_single_linter_file(key, value)
+            for key, value in linter_report.items()]
